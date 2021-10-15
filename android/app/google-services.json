@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "248753521287",
+    "project_id": "fir-nosql-84aae",
+    "storage_bucket": "fir-nosql-84aae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:248753521287:android:e21088abebfced002a2e22",
+        "android_client_info": {
+          "package_name": "com.saiparn.firebase_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "248753521287-lrlk4ckhr8v8kad9ve9saal147q7u150.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.saiparn.firebase_flutter",
+            "certificate_hash": "03460d37f973c39b9f4d0305968bca705e3a640f"
+          }
+        },
+        {
+          "client_id": "248753521287-t8jnn7v8tb4pq4h0h2k2696q5rqdua0a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ_Q1k3HjIvtePI-a59-CyFbZC4a_eTwo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "248753521287-t8jnn7v8tb4pq4h0h2k2696q5rqdua0a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
