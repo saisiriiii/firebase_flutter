@@ -23,7 +23,7 @@ Sirikamon Puttarat 62020730
 
 ### Sold Out
 
-[![245055743-1287928475051243-6094936959581137147-n.jpg](https://i.postimg.cc/Y9wxFyZ9/245055743-1287928475051243-6094936959581137147-n.jpg)](https://postimg.cc/R3Xf5GM5)
+[![245090266-1030718941097166-3275938168215394-n.jpg](https://i.postimg.cc/RZ635kLD/245090266-1030718941097166-3275938168215394-n.jpg)](https://postimg.cc/LJS4j07t)
 
 - ครัวซองขายหมดแล้ว
 - จะแสดง ' Sold Out Croissants '
