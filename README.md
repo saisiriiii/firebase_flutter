@@ -30,7 +30,7 @@ Sirikamon Puttarat 62020730
 
 ### Cloud Firestore
 
-[![245276115-251973263609961-4579927676462432523-n.png](https://i.postimg.cc/pTPbVkWN/245276115-251973263609961-4579927676462432523-n.png)](https://postimg.cc/yJprvm3n)
+[![245851782-896813327610221-2297258345555869679-n.png](https://i.postimg.cc/BvtcL7sW/245851782-896813327610221-2297258345555869679-n.png)](https://postimg.cc/LqKZGTnv)
 
 - เก็บ อัพเดท แก้ไข ลบ Data ใน Firebase
 - เมนูครัวซองมี รหัส ชื่อ ราคา ของสินค้า
