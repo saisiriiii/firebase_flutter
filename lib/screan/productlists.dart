@@ -20,7 +20,7 @@ class ProductLists extends StatelessWidget {
             if (snapshot.data?.length == 0) {
               //มีสมาชิกข้างใน firebase ไหม
               return Center(
-                child: Text('sold out Croissants'), //ไม่มี
+                child: Text('Sold Out Croissants'), //ไม่มี
               );
             }
             return ListView.builder(
