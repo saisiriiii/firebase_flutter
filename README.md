@@ -4,15 +4,18 @@ Flutter Firebase NoSQL : Croissants
 
 ## Developer
 
-นางสาวศิริกมล พุทธรัตน์ 62020730
+Sirikamon Puttarat 62020730
 
 ## System
 
-- Croissants Application
+- Croissants Application.
 
 - Croissant is the best bread ever !
 - Premium French Croissant !
 
-[![VRChat-1920x1080-2021-10-01-06-47-35-831.png](https://i.postimg.cc/sxPNqw68/VRChat-1920x1080-2021-10-01-06-47-35-831.png)](https://postimg.cc/K3zfgryr)
+[![245055743-1287928475051243-6094936959581137147-n.jpg](https://i.postimg.cc/Y9wxFyZ9/245055743-1287928475051243-6094936959581137147-n.jpg)](https://postimg.cc/R3Xf5GM5)
 
-คุณผัก
+หน้า Product View ได้ใช้ Cloud Firestore ในการแสดง เพิ่ม ลบ แก้ไข สินค้า
+กดบวกเพื่อเพิ่มรายการสินค้า
+กดที่สินค้าเพื่อเเก้ไขสินค้า
+กดรายการสินค้าแล้วเลื่อนไปทางซ้ายเพื่อลบสินค้า
