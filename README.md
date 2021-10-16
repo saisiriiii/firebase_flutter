@@ -1,23 +1,17 @@
 # firebase_flutter
 
-flutter firebase nosql : croissants
+Flutter Firebase NoSQL : Croissants
 
-## developer
+## Developer
 
 นางสาวศิริกมล พุทธรัตน์ 62020730
 
-## system
+## System
 
-- [croissants application]
+- Croissants Application
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Croissant is the best bread ever !
+Premium French Croissant !
 
 [![VRChat-1920x1080-2021-10-01-06-47-35-831.png](https://i.postimg.cc/sxPNqw68/VRChat-1920x1080-2021-10-01-06-47-35-831.png)](https://postimg.cc/K3zfgryr)
 
