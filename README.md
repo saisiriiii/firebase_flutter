@@ -107,7 +107,7 @@ class ProductLists extends StatelessWidget {
     Database db = Database.instance;
     Stream<List<ProductModel>> stream = db.getAllProductStream();
     return Container(
-      padding: EdgeInsets.only(top: 10),
+      padding: EdgeInsets.only(top: 50),
       child: StreamBuilder<List<ProductModel>>(
         stream: stream,
         builder: (context, snapshot) {
