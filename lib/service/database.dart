@@ -9,7 +9,7 @@ class Database {
   Stream<List<ProductModel>> getAllProductStream() {
     //เลือกใช้ stream เพื่อดูข้อมูลได้ แบบ real time
     print('getall');
-    final reference = FirebaseFirestore.instance.collection('Croissant');
+    final reference = FirebaseFirestore.instance.collection('Croissants');
     final query = reference.orderBy('price',
         descending: false); //เป็นตัวที่เอาไว้เรียงลำดับจากน้อยไปมาก
     //เรียงเอกสารจากมากไปน้อย โดยใช้ ฟิลด์ id

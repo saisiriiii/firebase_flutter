@@ -2,12 +2,12 @@ import 'package:firebase_flutter/models/product_model.dart';
 import 'package:flutter/material.dart';
 
 const KLeadingText = TextStyle(
-  fontSize: 30,
+  fontSize: 20,
   fontWeight: FontWeight.w300,
   color: Colors.blue,
 );
 const kTrailingText = TextStyle(
-  fontSize: 30,
+  fontSize: 20,
   fontWeight: FontWeight.w300,
   color: Colors.black,
 );

@@ -1,6 +1,6 @@
 # firebase_flutter
 
-A new Flutter project.
+Flutter Firebase NoSQL : Croissants
 
 ## Getting Started
 
