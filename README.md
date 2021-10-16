@@ -49,7 +49,7 @@ class ProductModel {
     required this.price,
   });
   factory ProductModel.fromMap(Map<String, dynamic>? product) {
-    // factory นำหน้า แสดงว่าภายใน constructor จะต้อง return ค่ากลับมา เป็น object ของ class ProductModel
+    //factory นำหน้า แสดงว่าภายใน constructor จะต้อง return ค่ากลับมา เป็น object ของ class ProductModel
     //ใส่ ? เเทนการเขียนโค้ด if (product == null) {return null;}
     String id = product?['id'];
     //ข้อมูล id เก็บค่าที่ได้มาจากฟิลด์ id ของฐานข้อมูล
@@ -70,18 +70,69 @@ class ProductModel {
 }
 ```
 
-### แก้ไขสินค้า
+### Service
 
 ```dart
-  Future<void> setProduct({ProductModel? product}) async {
-      //เลือก collection ที่ต้องการตามด้วย document เเล้วเอามาเก็บใน reference
-    final reference = FirebaseFirestore.instance.doc('products/${product?.id}');
-    try {
-      await reference.set(product!.toMap());
-    } catch (err) {
-      rethrow;
-    }
+//ใช้เพื่อติดต่อและจัดการข้อมูลไปยังฐานข้อมูลไปยังฐานข้อมูล Cloud Firestore
+//การอัพเดทข้อมูลสินค้า
+class Database {
+  static Database instance = Database._();
+  Database._();
+  Stream<List<ProductModel>> getAllProductStream() {
+    //เลือกใช้ stream เพื่อดูข้อมูลได้ แบบ real time
+    print('getall');
+    final reference = FirebaseFirestore.instance.collection('Croissants'); //หัวข้อหลัก
+    final query = reference.orderBy('price',
+        descending: false); //เป็นตัวที่เอาไว้เรียงลำดับ จากน้อยไปมาก
+    final snapshots = query.snapshots();
+    //QuerySnapshot<Map<String, dynamic>> snapshot
+    //QuerySnapshot<Object?> snapshot
+    return snapshots.map((snapshot) {
+      return snapshot.docs.map((doc) {
+        return ProductModel.fromMap(doc.data());
+      }).toList();
+    });
   }
+}
 ```
 
+### Screan
+
+```dart
+class ProductLists extends StatelessWidget {
+  const ProductLists({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    Database db = Database.instance;
+    Stream<List<ProductModel>> stream = db.getAllProductStream();
+    return Container(
+      padding: EdgeInsets.only(top: 10),
+      child: StreamBuilder<List<ProductModel>>(
+        stream: stream,
+        builder: (context, snapshot) {
+          if (snapshot.hasData) {
+            //เช็คว่ามีข้อมูลไหมใน firebase ไหม
+            if (snapshot.data?.length == 0) {
+              //มีสมาชิกข้างใน firebase ไหม
+              return Center(
+                child: Text('Sold Out Croissants'), //แสดงเมื่อ ไม่มี
+              );
+            }
+            return ListView.builder(
+              itemCount: snapshot.data?.length,
+              itemBuilder: (context, index) {
+                return ProductItem(
+                  product: snapshot.data![index],
+                );
+              },
+            );
+          }
+          return Center(child: CircularProgressIndicator());
+        },
+      ),
+    );
+  }
+}
+```
 
