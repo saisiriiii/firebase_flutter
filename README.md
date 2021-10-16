@@ -1,10 +1,10 @@
 # firebase_flutter
 
-Flutter Firebase NoSQL : Croissants
+flutter firebase nosql : croissants
 
-## Getting Started
+## developer
 
-This project is a starting point for a Flutter application.
+นางสาวศิริกมล พุทธรัตน์ 62020730
 
 A few resources to get you started if this is your first Flutter project:
 
